@@ -37,12 +37,11 @@ O projeto segue boas práticas como:
 
 ## Estrutura do Projeto
 
+```bash
 JwtApi
-│
 ├── Controller
 │   ├── Auth
 │   │   └── AuthController.cs
 │   └── Secure
 │       └── SecureController.cs
-│
 └── Program.cs
