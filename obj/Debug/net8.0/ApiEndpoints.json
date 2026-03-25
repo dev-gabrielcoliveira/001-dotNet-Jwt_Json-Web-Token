@@ -1,0 +1,58 @@
+[
+  {
+    "ContainingType": "JwtApi.Controller.Auth.AuthController",
+    "Method": "Login",
+    "RelativePath": "Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "senha",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "papel",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JwtApi.Controller.Secure.SecureController",
+    "Method": "Home",
+    "RelativePath": "Secure/home",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JwtApi.Controller.Secure.SecureController",
+    "Method": "Administrador",
+    "RelativePath": "Secure/perfil/administrador",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JwtApi.Controller.Secure.SecureController",
+    "Method": "Usuario",
+    "RelativePath": "Secure/perfil/usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

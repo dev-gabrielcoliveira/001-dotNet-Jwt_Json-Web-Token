@@ -1,0 +1,24 @@
+@JwtApi_HostAddress = http://localhost:5135
+
+
+### Acessar Login
+
+POST {{JwtApi_HostAddress}}/auth/login?email=teste@gmail.com&senha=123&papel=Admin
+Content-Type: application/json
+
+{}
+
+### Acessar Método exclusivo do admin
+
+GET {{JwtApi_HostAddress}}/secure/perfil/administrador
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0ZUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImp0aSI6ImMzMDgyZTliLWU0MzItNGU5OS1hMTY5LTgyMGVjNDg1N2U1MiIsImV4cCI6MTc3NDQwNjUxMCwiaXNzIjoiU3VhQXBwSnd0In0.P3uoH8VLjB6ow2nnHC1gxE5FiZtApB3EQD5GxAUtoBM
+}
+
+### Acessar Método exclusivo do usuário
+
+GET {{JwtApi_HostAddress}}/secure/perfil/usuario
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0ZUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImp0aSI6ImMzMDgyZTliLWU0MzItNGU5OS1hMTY5LTgyMGVjNDg1N2U1MiIsImV4cCI6MTc3NDQwNjUxMCwiaXNzIjoiU3VhQXBwSnd0In0.P3uoH8VLjB6ow2nnHC1gxE5FiZtApB3EQD5GxAUtoBM
+
+#### Acessar a Home
+
+GET {{JwtApi_HostAddress}}/secure/home
